@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <title>XKCD Browser</title>
+</head>
+
+<body onload="dates()">
+    <h1>DATES</h1>
+    <p id="here"></p>
+    <script src="lib/moment/moment.min.js"></script>
+    <script>
+        function dates() {
+        const m = moment();
+        document.getElementById("here").innerHTML = m.toString();
+        }
+    </script>
+</body>
